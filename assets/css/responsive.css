@@ -1,0 +1,42 @@
+@media only screen and (max-width: 650px) {
+  .header__nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+  }
+  .header__nav.active {
+    display: block;
+  }
+  .header__nav-list {
+    margin-left: 1.8rem;
+    flex-direction: column;
+    align-items: start;
+  }
+  .header__nav-item {
+    animation: showitem 0.6s ease-in;
+  }
+  @keyframes showitem {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .header__nav-item-link:hover {
+    background-color: transparent;
+  }
+  .menu-icon {
+    display: block;
+    margin-left: auto;
+  }
+  .image__top-content span {
+    font-size: 2.5rem;
+  }
+  .image__top-content {
+    transform: translate(-50%, 30%);
+  }
+}
